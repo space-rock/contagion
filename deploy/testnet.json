@@ -1,0 +1,79 @@
+{
+  "network": "testnet",
+  "wasm_sha256": "b31f2cde175c443e3d360c873a6b0cfb1c65bcc78c19637609075dbc5578833a",
+  "code_hash_bs58": "D4DYsPNCi7EYp3447uXfm66fSrvn2qD7BZhHpLCidYM7",
+  "deployed_on": "2026-11-04",
+  "keys_burned": true,
+  "standards": [
+    "nep141",
+    "nep145",
+    "nep148",
+    "nep297",
+    "nep330"
+  ],
+  "abi": "deploy/abi.json",
+  "reproducible_build": true,
+  "icon": "brand/coin.svg",
+  "icon_updated_on": "2026-11-06",
+  "standards_updated_on": "2026-11-06",
+  "code_updated_on": "2026-11-12",
+  "instances": {
+    "live": {
+      "contract": "contagion-live.testnet",
+      "preset": "deploy/presets/live.json",
+      "patient_zeros": [
+        "contagion-zero1.testnet",
+        "contagion-zero2.testnet",
+        "contagion-zero3.testnet"
+      ],
+      "note": "21 day incubation, 30 day season, seeded with 24 hosts, 3 recoveries and 2 vaccinations. The token icon and then the standards upgrade (near-contract-standards traits, embedded ABI, NEP-330 metadata, NEP-145 withdraw and unregister) were code-only redeploys with state preserved. So was the 2026-11-12 update: vaccination price that rises with each vaccination, stricter new() checks, get_stats with the current vaccine price and the time-end reason, and the repository link in the source metadata."
+    },
+    "demo": {
+      "contract": "contagion-demo.testnet",
+      "preset": "deploy/presets/demo.json",
+      "patient_zeros": [
+        "contagion-dzero.testnet"
+      ],
+      "note": "3 minute incubation, 2 hour season, for recording the full cycle. Its only patient zero expired minutes after deployment by design, so it is dead now: run scripts/deploy-testnet.sh demo <new-name> <zero> right before recording, then scripts/seed-testnet.sh.",
+      "alive": false
+    },
+    "demo_video": {
+      "contract": "flu-demo-nov12.testnet",
+      "preset": "deploy/presets/demo.json",
+      "patient_zeros": [
+        "flu-dzero-nov12.testnet"
+      ],
+      "note": "Deployed 2026-11-12 10:30 UTC for the demo video (3 minute incubation, 2 hour season), so its season is over. Same wasm as the live instance at that time.",
+      "alive": false
+    },
+    "demo_wallet_test": {
+      "contract": "flu-demo2-nov12.testnet",
+      "preset": "deploy/presets/demo.json",
+      "patient_zeros": [
+        "flu-dzero2-nov12.testnet"
+      ],
+      "note": "Deployed 2026-11-12 15:28 UTC with the verified reproducible wasm for the wallet test: catch, recover, vaccinate and claim signed through near-connect. Its season ended by herd immunity at 8 immune of 25 infected.",
+      "alive": false
+    },
+    "demo_video_2": {
+      "contract": "flu-demo3-nov12.testnet",
+      "preset": "deploy/presets/demo.json",
+      "patient_zeros": [
+        "flu-dzero3-nov12.testnet"
+      ],
+      "note": "Deployed 2026-11-12 15:43 UTC with the verified reproducible wasm; recover, vaccinate to herd immunity and claim were recorded here for the demo video.",
+      "alive": false
+    },
+    "demo_late_recover": {
+      "contract": "flu-demo4-nov12.testnet",
+      "preset": "deploy/presets/demo.json",
+      "patient_zeros": [
+        "flu-dzero2-nov12.testnet"
+      ],
+      "note": "Deployed 2026-11-12 15:39 UTC for the late recover wallet test (50% burn after the clock ran out). Two hour season, so it is over.",
+      "alive": false
+    }
+  },
+  "source_code_snapshot": "git+https://github.com/space-rock/contagion?rev=5aabf57d41543bee1f99f016f5fd2da0d9869838",
+  "verified_on": "https://testnet.nearblocks.io/address/contagion-live.testnet/contract/code"
+}

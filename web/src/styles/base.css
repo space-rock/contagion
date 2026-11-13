@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.55 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--brand-1);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+  border-radius: 10px;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+code {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 0.88em;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 13px;
+}
+
+.hidden {
+  display: none;
+}
+
+.grad-text {
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.sk {
+  display: block;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--surface-2), var(--line), var(--surface-2));
+  background-size: 220% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+
+.sk-line {
+  height: 16px;
+  width: min(260px, 70%);
+}
+
+.sk-line.short {
+  width: 120px;
+  margin-top: 8px;
+}
+
+.sk-value {
+  height: 34px;
+  width: 90px;
+}
+
+.sk-inline {
+  display: inline-block;
+  height: 18px;
+  width: 64px;
+  vertical-align: middle;
+}
+
+.sk-bar {
+  height: 100%;
+  width: 100%;
+  border-radius: 999px;
+}
+
+.sk-avatar {
+  height: 104px;
+  width: 104px;
+  border-radius: 50%;
+  flex: none;
+}
+
+.sk-avatar.sm {
+  height: 36px;
+  width: 36px;
+}
+
+.sk-block {
+  height: 90px;
+  margin-top: 16px;
+}
+
+.sk-ring {
+  height: 104px;
+  width: 104px;
+  border-radius: 50%;
+}
+
+.sk-map {
+  position: absolute;
+  inset: 0;
+  border-radius: 0;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -220% 0;
+  }
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2.5px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

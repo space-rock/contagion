@@ -1,0 +1,17 @@
+{
+  "base": "1000000000000000000000",
+  "decay_bps": 6000,
+  "bonus_bps": 3000,
+  "fanout": 5,
+  "incubation_ns": "1814400000000000",
+  "burn_expired_bps": 5000,
+  "burn_voluntary_bps": 1000,
+  "cull_cut_bps": 1000,
+  "vax_cost": "20000000000000000000",
+  "herd_bps": 3000,
+  "min_hosts": 1000,
+  "season_max_ns": "2592000000000000",
+  "min_fee": "10000000000000000000000",
+  "fee_per_unit": "50",
+  "reserve_bps": 2000
+}

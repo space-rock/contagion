@@ -1,0 +1,17 @@
+[package]
+name = "contagion-sim"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "contagion_sim"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sim"
+path = "src/main.rs"
+
+[dependencies]
+contagion-core = { path = "../core" }
+serde_json = "1"

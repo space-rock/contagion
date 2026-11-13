@@ -1,0 +1,62 @@
+{
+  "config": {
+    "base": "1000000000000000000000",
+    "bonus_bps": 3000,
+    "burn_expired_bps": 5000,
+    "burn_voluntary_bps": 1000,
+    "cull_cut_bps": 1000,
+    "decay_bps": 6000,
+    "fanout": 5,
+    "fee_per_unit": "500",
+    "herd_bps": 3000,
+    "incubation_ns": "259200000000000",
+    "min_fee": "10000000000000000000000",
+    "min_hosts": 1000,
+    "reserve_bps": 2000,
+    "season_max_ns": "2592000000000000",
+    "vax_cost": "20000000000000000000"
+  },
+  "outcome": {
+    "burned": 5144.2418880000005,
+    "burned_pct_of_infection_mint": 28.87080449262113,
+    "carriers_unsettled_at_end": 0,
+    "catches": 34,
+    "culls": 17,
+    "days_to_1000_hosts": null,
+    "days_to_100_hosts": null,
+    "fees_near": 6.8531328,
+    "hosts": 37,
+    "immune": 26,
+    "infection_minted": 17818.14528,
+    "max_gen": 7,
+    "minted": 21381.774336,
+    "plague_doctor_balance": 405.13248,
+    "plague_doctor_cut": 405.13248,
+    "recovered": 37,
+    "reserve_paid": 3563.629056,
+    "reserve_pct_of_supply": 21.9468633390718,
+    "reserve_pool": 3563.629056,
+    "reserve_to_top3_pct": 45.3551912568306,
+    "supply": 16237.532448000002,
+    "tokens_per_near": 2600.0,
+    "top10_holdings_pct": 52.88713825687493
+  },
+  "params": {
+    "cull_prob": 0.25,
+    "diligence": 0.5,
+    "doctors": 5,
+    "interest_mean_h": 36.0,
+    "pop": 20000,
+    "share_rate": 0.015,
+    "sybil_alts": 0,
+    "vax_per_hour": 1,
+    "vaxxer_share": 0.02
+  },
+  "scenario": "stalled",
+  "season": {
+    "end_day": 30.0,
+    "end_reason": "time"
+  },
+  "seed": 7920,
+  "sybil": null
+}

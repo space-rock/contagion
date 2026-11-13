@@ -1,0 +1,56 @@
+:root {
+  color-scheme: dark;
+
+  --font-display: 'Fredoka Variable', 'Fredoka', ui-rounded, 'SF Pro Rounded', system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --bg: #060c09;
+  --bg-2: #0b1511;
+  --surface: rgb(20 34 27 / 70%);
+  --surface-solid: #101d17;
+  --surface-2: rgb(255 255 255 / 5%);
+  --line: rgb(255 255 255 / 10%);
+  --line-strong: rgb(255 255 255 / 20%);
+  --text: #eef8f1;
+  --muted: #9db5a6;
+
+  --brand-1: #22c55e;
+  --brand-2: #84cc16;
+  --brand-3: #06b6d4;
+  --live: #22c55e;
+  --expired: #f59e0b;
+  --recovered: #38bdf8;
+  --immune: #c084fc;
+  --danger: #fb7185;
+
+  --grad-brand: linear-gradient(135deg, #22c55e 0%, #84cc16 48%, #06b6d4 100%);
+  --grad-brand-soft: linear-gradient(135deg, rgb(34 197 94 / 20%), rgb(6 182 212 / 16%));
+  --grad-hot: linear-gradient(135deg, #f59e0b, #ef4444);
+  --grad-immune: linear-gradient(135deg, #a855f7, #ec4899);
+  --grad-cool: linear-gradient(135deg, #38bdf8, #6366f1);
+  --ink-on-brand: #04170b;
+
+  --radius: 22px;
+  --radius-sm: 14px;
+  --shadow: 0 16px 50px rgb(0 0 0 / 38%);
+  --focus: 0 0 0 3px rgb(34 197 94 / 45%);
+  --topbar: 68px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) {
+    color-scheme: light;
+    --bg: #f2faf5;
+    --bg-2: #e5f4ea;
+    --surface: rgb(255 255 255 / 80%);
+    --surface-solid: #ffffff;
+    --surface-2: rgb(10 70 35 / 6%);
+    --line: rgb(7 40 22 / 12%);
+    --line-strong: rgb(7 40 22 / 24%);
+    --text: #0c2215;
+    --muted: #4a6855;
+    --shadow: 0 14px 40px rgb(10 70 35 / 14%);
+    --focus: 0 0 0 3px rgb(22 163 74 / 40%);
+    --danger: #e11d48;
+  }
+}

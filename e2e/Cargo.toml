@@ -1,0 +1,27 @@
+[package]
+name = "contagion-e2e"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[dev-dependencies]
+contagion-core = { path = "../core" }
+near-workspaces = "0.24"
+tokio = { version = "1", features = ["full"] }
+serde_json = "1"
+anyhow = "1"
+wasmparser = "0.230"
+ruzstd = "0.9"
+
+[[example]]
+name = "demo"
+path = "examples/demo.rs"
+
+[[example]]
+name = "testnet"
+path = "examples/testnet.rs"
+
+[[example]]
+name = "compat"
+path = "examples/compat.rs"
